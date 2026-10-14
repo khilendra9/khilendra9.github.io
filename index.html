@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Khilendra Kumar Sahu | Full Stack Developer</title>
+<meta name="description" content="Khilendra Kumar Sahu: Full Stack Developer with 12+ years of experience in React, Next.js, Spring Boot, PHP and Jira/Atlassian app development. Based in Raipur, India.">
+<style>
+  :root {
+    --ink: #1c2530;
+    --muted: #5b6672;
+    --line: #dfe4ea;
+    --accent: #0f6b6e;
+    --accent-soft: #e6f2f2;
+    --bg: #f4f6f8;
+    --card: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .page {
+    max-width: 960px;
+    margin: 32px auto;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  header {
+    padding: 40px 40px 28px;
+    border-bottom: 4px solid var(--accent);
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  .head-text { flex: 1; min-width: 0; }
+  .photo {
+    flex: none;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--accent-soft);
+    box-shadow: 0 0 0 2px var(--accent);
+    background: var(--accent-soft);
+    order: 2;
+  }
+  header h1 { margin: 0; font-size: 2.1rem; letter-spacing: -0.5px; line-height: 1.2; }
+  header .role { margin: 6px 0 18px; font-size: 1.1rem; color: var(--accent); font-weight: 600; }
+  .contact { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 0; padding: 0; list-style: none; font-size: 0.95rem; color: var(--muted); }
+  .contact a { color: var(--muted); }
+  .contact a:hover { color: var(--accent); }
+  .actions { margin-top: 18px; }
+  .btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid var(--accent);
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-right: 8px;
+  }
+  .btn.primary { background: var(--accent); color: #fff; }
+  .btn:hover { text-decoration: none; opacity: 0.88; }
+  .layout { display: grid; grid-template-columns: 1fr 280px; }
+  main { padding: 28px 40px 40px; }
+  aside { padding: 28px 32px 40px; background: #fafbfc; border-left: 1px solid var(--line); }
+  h2 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    color: var(--accent);
+    margin: 28px 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--line);
+  }
+  main > h2:first-child, aside > h2:first-child { margin-top: 0; }
+  p { margin: 0 0 10px; }
+  .job { margin-bottom: 24px; }
+  .job-head { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 2px 12px; align-items: baseline; }
+  .job h3 { margin: 0; font-size: 1.08rem; }
+  .job .date { color: var(--muted); font-size: 0.9rem; white-space: nowrap; }
+  .job .company { color: var(--muted); margin: 0 0 6px; font-size: 0.95rem; }
+  ul { margin: 6px 0 0; padding-left: 20px; }
+  li { margin-bottom: 5px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
+  .tags li {
+    margin: 0;
+    background: var(--accent-soft);
+    color: var(--accent);
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  .skill-group { margin-bottom: 16px; }
+  .skill-group h4 { margin: 0 0 6px; font-size: 0.9rem; }
+  .edu { margin-bottom: 14px; font-size: 0.93rem; }
+  .edu strong { display: block; }
+  .edu span { color: var(--muted); }
+  .sites { font-size: 0.9rem; color: var(--muted); }
+  footer { text-align: center; color: var(--muted); font-size: 0.82rem; padding: 0 0 28px; }
+
+  @media (max-width: 760px) {
+    .page { margin: 0; border-radius: 0; border-left: 0; border-right: 0; }
+    header { padding: 28px 20px 22px; flex-direction: column-reverse; align-items: flex-start; gap: 18px; }
+    .photo { width: 112px; height: 112px; order: 0; }
+    header h1 { font-size: 1.7rem; }
+    .layout { grid-template-columns: 1fr; }
+    main { padding: 22px 20px 8px; }
+    aside { padding: 8px 20px 32px; border-left: 0; border-top: 1px solid var(--line); background: var(--card); }
+    aside > h2:first-child { margin-top: 24px; }
+  }
+  @media print {
+    body { background: #fff; font-size: 11pt; }
+    .page { margin: 0; border: 0; border-radius: 0; }
+    .actions { display: none; }
+    .job { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div class="head-text">
+    <h1>Khilendra Kumar Sahu</h1>
+    <p class="role">Full Stack Developer &middot; React / Next.js / Spring Boot &middot; Jira &amp; Atlassian Apps</p>
+    <ul class="contact">
+      <li>Raipur, Chhattisgarh, India</li>
+      <li><a href="mailto:khilendra.sahu443@gmail.com">khilendra.sahu443@gmail.com</a></li>
+      <li><a href="tel:+919399419969">+91 93994 19969</a></li>
+      <li><a href="https://github.com/khilendra9">github.com/khilendra9</a></li>
+    </ul>
+    <div class="actions">
+      <a class="btn primary" href="Khilendra_Kumar_Sahu_Resume.docx" download>Download Resume (.docx)</a>
+      <a class="btn" href="mailto:khilendra.sahu443@gmail.com">Contact me</a>
+    </div>
+    </div>
+    <img class="photo" src="profile.jpg" width="150" height="150" alt="Photo of Khilendra Kumar Sahu">
+  </header>
+
+  <div class="layout">
+    <main>
+      <h2>Profile</h2>
+      <p>Full stack developer with 12+ years of experience building web applications, e-commerce sites, mobile apps and Jira plugins. Currently working with React.js, Next.js, Spring Boot, MongoDB and Python, and publishing a commercial AI-powered app on the Atlassian Marketplace. Comfortable owning a project from planning and design through development, testing and client hand-over.</p>
+
+      <h2>Experience</h2>
+
+      <div class="job">
+        <div class="job-head">
+          <h3>Software Developer</h3>
+          <span class="date">[Start date] &ndash; Present</span>
+        </div>
+        <p class="company"><a href="https://conceptsandbeyond.com">Concepts &amp; Beyond Inc.</a></p>
+        <ul>
+          <li>Built <a href="https://marketplace.atlassian.com/apps/1217549/at-a-glance-ai-telemetry-dashboard-for-jira">At a Glance AI Telemetry Dashboard for Jira</a>, a commercial Jira Cloud app on the Atlassian Marketplace that shows sprint status, builds, commits, code quality and test coverage in one dashboard, with an AI chat for asking questions about that data.</li>
+          <li>Worked on integrations with GitHub, Bitbucket Pipelines, Jenkins, Travis CI, SonarQube and SonarCloud.</li>
+          <li>Develop and maintain web applications using React.js, Next.js, Spring Boot, MongoDB and Python.</li>
+          <li>Manage and update the company website, <a href="https://conceptsandbeyond.com">conceptsandbeyond.com</a>.</li>
+          <li>Set up Jira projects, dashboards and customer accounts to meet each client's requirements.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <h3>Software Developer (Web &amp; Mobile Apps)</h3>
+          <span class="date">Sept 2021 &ndash; [End date]</span>
+        </div>
+        <p class="company">CGPostal, Raipur</p>
+        <ul>
+          <li>Developed and maintained government-managed web applications for CGPostal, including cgpost.gov.in and appost.in.</li>
+          <li>Designed, tested and planned the project structure for each application.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <h3>Software Developer (Web &amp; Mobile Apps)</h3>
+          <span class="date">Nov 2016 &ndash; Aug 2020</span>
+        </div>
+        <p class="company">Feyntech, Raipur</p>
+        <ul>
+          <li>Built native mobile apps, including APAS &amp; Co. and Shikarpuri Samaj.</li>
+          <li>Developed a plugin for Jira Server.</li>
+          <li>Built an automobile accounting web application.</li>
+          <li>Delivered client web applications such as mbbuilders.in, myinvestorfirst.com, midataview.com, bravamarketing.com and aestheticinstitute.co.in.</li>
+          <li>Handled testing, planning and project structure.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <h3>Software Developer</h3>
+          <span class="date">May 2015 &ndash; Aug 2016</span>
+        </div>
+        <p class="company">Suncrossonline, Bhilai</p>
+        <ul>
+          <li>Developed e-commerce and business websites, including ramkrishnacarehospitals.com, myh2oro.com, ssrcivilcon.com, shrishtiarchitects.com, spiritualinitiative.org and incubeventures.com.</li>
+          <li>Planned and managed the front-end and back-end structure of each site and took part in project design.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <h3>Web Developer &amp; Designer</h3>
+          <span class="date">May 2014 &ndash; Apr 2015</span>
+        </div>
+        <p class="company">Sirmor Software Solution, Raipur</p>
+        <ul>
+          <li>Designed and built websites while working daily with back-end developers.</li>
+          <li>Projects include newscg.com, subhproperty.com, sirmor.com, pateshwardham.com and bastarlive.com.</li>
+        </ul>
+      </div>
+    </main>
+
+    <aside>
+      <h2>Skills</h2>
+      <div class="skill-group">
+        <h4>Front end</h4>
+        <ul class="tags">
+          <li>React.js</li><li>Next.js</li><li>Redux</li><li>JavaScript</li><li>jQuery</li><li>Ajax</li><li>HTML</li><li>CSS</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h4>Back end</h4>
+        <ul class="tags">
+          <li>Java (Spring Boot)</li><li>Python</li><li>PHP</li><li>CakePHP</li><li>WordPress</li><li>WooCommerce</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h4>Databases</h4>
+        <ul class="tags">
+          <li>MongoDB</li><li>MySQL</li><li>SQL</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h4>Atlassian &amp; tools</h4>
+        <ul class="tags">
+          <li>Jira administration</li><li>Jira dashboards</li><li>Jira plugin development</li><li>Linux</li><li>Windows</li>
+        </ul>
+      </div>
+
+      <h2>Education</h2>
+      <div class="edu">
+        <strong>MCA</strong>
+        <span>MATS University, Raipur<br>2014 &middot; 64.6%</span>
+      </div>
+      <div class="edu">
+        <strong>B.Sc (Computer Science)</strong>
+        <span>Govt. V.Y.T. PG Autonomous Science College, Durg<br>2011 &middot; 52.8%</span>
+      </div>
+      <div class="edu">
+        <strong>Class 12</strong>
+        <span>St. Murhipar School, Rajnandgaon<br>2008 &middot; 69.8%</span>
+      </div>
+
+      <h2>Languages</h2>
+      <p class="sites">Hindi, English, Chhattisgarhi</p>
+
+      <h2>Location</h2>
+      <p class="sites">Raipur, Chhattisgarh (preferred)</p>
+    </aside>
+  </div>
+
+  <footer>Last updated October 2026</footer>
+</div>
+</body>
+</html>
